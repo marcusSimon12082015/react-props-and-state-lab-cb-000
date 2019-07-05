@@ -47,7 +47,7 @@ class App extends React.Component {
               <Filters onChangeType={this.handleChange} filters={this.state.filters.type}/>
             </div>
             <div className="twelve wide column">
-              <PetBrowser />
+              <PetBrowser pets={this.state.pets} onAdoptPet={this.handleAdopt}/>
             </div>
           </div>
         </div>
