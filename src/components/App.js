@@ -44,7 +44,7 @@ class App extends React.Component {
         <div className="ui container">
           <div className="ui grid">
             <div className="four wide column">
-              <Filters onChangeType={this.handleChange} filters={this.state.filters.type}/>
+              <Filters onChangeType={this.handleChange} filters={this.state.filters.type} onFindPetsClick={this.handlePets}/>
             </div>
             <div className="twelve wide column">
               <PetBrowser pets={this.state.pets} onAdoptPet={this.handleAdopt}/>
