@@ -33,7 +33,7 @@ class App extends React.Component {
 
   handleAdopt = (petId) => {
     for(var k in this.state.pets){
-      
+
     }
   }
 
