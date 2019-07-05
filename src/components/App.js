@@ -31,8 +31,10 @@ class App extends React.Component {
     fetch(fetchAPI).then(response => response.json).then(data => this.setState({pets:data}));
   }
 
-  handleAdopt = () => {
-
+  handleAdopt = (petId) => {
+    for(var k in this.state.pets){
+      
+    }
   }
 
   render() {
