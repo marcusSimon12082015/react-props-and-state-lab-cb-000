@@ -32,9 +32,12 @@ class App extends React.Component {
   }
 
   handleAdopt = (petId) => {
-    for(var k in this.state.pets){
-
-    }
+    this.state.pets.forEach(function(data,index){
+      var id = 'id';
+      if (data[index][id] === petId) {
+        this.setState({pets:{...this.state.pets[index],isAdopted:true}});
+      }
+    });
   }
 
   render() {
